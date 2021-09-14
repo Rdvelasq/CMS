@@ -92,6 +92,10 @@
     <Compile Include="Migrations\202109101450298_first.Designer.cs">
       <DependentUpon>202109101450298_first.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109142232349_DBset Employee.cs" />
+    <Compile Include="Migrations\202109142232349_DBset Employee.Designer.cs">
+      <DependentUpon>202109142232349_DBset Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Personnel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,6 +107,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202109101450298_first.resx">
       <DependentUpon>202109101450298_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109142232349_DBset Employee.resx">
+      <DependentUpon>202109142232349_DBset Employee.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

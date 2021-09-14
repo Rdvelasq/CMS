@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMS.Models.Employee
+namespace CMS.Models.EmployeeModels
 {
-    public class Detail
+    public class Create
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
