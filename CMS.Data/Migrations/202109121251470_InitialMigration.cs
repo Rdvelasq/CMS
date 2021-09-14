@@ -3,10 +3,40 @@ namespace CMS.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class first : DbMigration
+    public partial class InitialMigration : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Department",
+                c => new
+                    {
+                        DepartmentId = c.Int(nullable: false, identity: true),
+                        DepartmentName = c.String(nullable: false),
+                    })
+                .PrimaryKey(t => t.DepartmentId);
+            
+            CreateTable(
+                "dbo.Personnel",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        FirstName = c.String(nullable: false),
+                        LastName = c.String(nullable: false),
+                        HireDate = c.DateTime(nullable: false),
+                        Email = c.String(nullable: false),
+                        ManagerId = c.Int(),
+                        HourlyRate = c.Double(),
+                        DepartmentId = c.Int(),
+                        Discriminator = c.String(nullable: false, maxLength: 128),
+                        Department_DepartmentId = c.Int(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Department", t => t.DepartmentId, cascadeDelete: true)
+                .ForeignKey("dbo.Department", t => t.Department_DepartmentId)
+                .Index(t => t.DepartmentId)
+                .Index(t => t.Department_DepartmentId);
+            
             CreateTable(
                 "dbo.IdentityRole",
                 c => new
@@ -85,15 +115,21 @@ namespace CMS.Data.Migrations
             DropForeignKey("dbo.IdentityUserLogin", "ApplicationUser_Id", "dbo.ApplicationUser");
             DropForeignKey("dbo.IdentityUserClaim", "ApplicationUser_Id", "dbo.ApplicationUser");
             DropForeignKey("dbo.IdentityUserRole", "IdentityRole_Id", "dbo.IdentityRole");
+            DropForeignKey("dbo.Personnel", "Department_DepartmentId", "dbo.Department");
+            DropForeignKey("dbo.Personnel", "DepartmentId", "dbo.Department");
             DropIndex("dbo.IdentityUserLogin", new[] { "ApplicationUser_Id" });
             DropIndex("dbo.IdentityUserClaim", new[] { "ApplicationUser_Id" });
             DropIndex("dbo.IdentityUserRole", new[] { "ApplicationUser_Id" });
             DropIndex("dbo.IdentityUserRole", new[] { "IdentityRole_Id" });
+            DropIndex("dbo.Personnel", new[] { "Department_DepartmentId" });
+            DropIndex("dbo.Personnel", new[] { "DepartmentId" });
             DropTable("dbo.IdentityUserLogin");
             DropTable("dbo.IdentityUserClaim");
             DropTable("dbo.ApplicationUser");
             DropTable("dbo.IdentityUserRole");
             DropTable("dbo.IdentityRole");
+            DropTable("dbo.Personnel");
+            DropTable("dbo.Department");
         }
     }
 }

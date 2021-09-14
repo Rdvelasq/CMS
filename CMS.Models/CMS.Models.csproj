@@ -54,6 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Department\DepartCreate.cs" />
+    <Compile Include="Department\DepartDetail.cs" />
+    <Compile Include="Department\DepartEdit.cs" />
+    <Compile Include="Department\DepartListItem.cs" />
     <Compile Include="Employee\Create.cs" />
     <Compile Include="Employee\Detail.cs" />
     <Compile Include="Employee\Edit.cs" />
@@ -74,6 +78,8 @@
       <Name>CMS.Data</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Manager\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
