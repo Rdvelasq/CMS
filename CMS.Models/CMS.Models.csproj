@@ -62,6 +62,10 @@
     <Compile Include="Employee\Detail.cs" />
     <Compile Include="Employee\Edit.cs" />
     <Compile Include="Employee\ListItem.cs" />
+    <Compile Include="Managers\Create.cs" />
+    <Compile Include="Managers\Detail.cs" />
+    <Compile Include="Managers\Edit.cs" />
+    <Compile Include="Managers\ListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
