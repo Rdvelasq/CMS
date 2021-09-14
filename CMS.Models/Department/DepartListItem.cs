@@ -1,22 +1,23 @@
-﻿using System;
+﻿using CMS.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMS.Data
+namespace CMS.Models.Department
 {
-    public class Department
+    public class DepartListItem
     {
-        [Key]        
+        [Display(Name = "Department ID")]
         public int DepartmentId { get; set; }
 
-        [Required]
+        [Display(Name = "Department Name")]
         public string DepartmentName { get; set; }
+        public override string ToString() => DepartmentName;
 
-
-        //This is the list of personnel
+        [Display(Name = "List of Personnel")]
         public List<Personnel> DepartmentListPersonnel { get; set; }
     }
 }
