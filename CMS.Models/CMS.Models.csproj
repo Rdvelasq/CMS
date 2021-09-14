@@ -58,6 +58,10 @@
     <Compile Include="Employee\Detail.cs" />
     <Compile Include="Employee\Edit.cs" />
     <Compile Include="Employee\ListItem.cs" />
+    <Compile Include="Managers\Create.cs" />
+    <Compile Include="Managers\Detail.cs" />
+    <Compile Include="Managers\Edit.cs" />
+    <Compile Include="Managers\ListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +73,9 @@
       <Project>{e7ba4f7f-5c64-4207-8c9b-02d3cc0ccbbb}</Project>
       <Name>CMS.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -87,7 +87,6 @@
     <Compile Include="Department.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Manager.cs" />
     <Compile Include="Migrations\202109101450298_first.cs" />
     <Compile Include="Migrations\202109101450298_first.Designer.cs">
       <DependentUpon>202109101450298_first.cs</DependentUpon>
