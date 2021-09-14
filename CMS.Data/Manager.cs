@@ -11,5 +11,14 @@ namespace CMS.Data
     {
         [Required]
         public int ManagerId { get; set; }
+
+        [Required]
+        public List<Employee> Employees { get; set; } = new List<Employee>();
+
+        [Required]
+        public int NumberOfEmployees { get; set; }
+
+        [Required]
+        public double salary { get; set; }
     }
 }
