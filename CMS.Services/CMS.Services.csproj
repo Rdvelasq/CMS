@@ -54,12 +54,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Department_Services\DepartService.cs" />
     <Compile Include="EmployeeService\EmployeeServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Employee\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CMS.Data\CMS.Data.csproj">
@@ -71,6 +75,16 @@
       <Name>CMS.Models</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Employee\" />
+  </ItemGroup>
+    <Folder Include="Employee\" />
+  </ItemGroup>
+    <Folder Include="Employee\" />
+  </ItemGroup>
+    <Folder Include="Employee\" />
+  </ItemGroup>
+    <Folder Include="Employee\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

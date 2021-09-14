@@ -60,5 +60,7 @@ namespace CMS.Data
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Department> Departments { get; set; } 
     }
 }

@@ -88,9 +88,13 @@
     <Compile Include="Employee.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Manager.cs" />
-    <Compile Include="Migrations\202109101450298_first.cs" />
-    <Compile Include="Migrations\202109101450298_first.Designer.cs">
-      <DependentUpon>202109101450298_first.cs</DependentUpon>
+    <Compile Include="Migrations\202109121251470_InitialMigration.cs" />
+    <Compile Include="Migrations\202109121251470_InitialMigration.Designer.cs">
+      <DependentUpon>202109121251470_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109122019481_IntialMigration.cs" />
+    <Compile Include="Migrations\202109122019481_IntialMigration.Designer.cs">
+      <DependentUpon>202109122019481_IntialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202109142232349_DBset Employee.cs" />
     <Compile Include="Migrations\202109142232349_DBset Employee.Designer.cs">
@@ -105,8 +109,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202109101450298_first.resx">
-      <DependentUpon>202109101450298_first.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202109121251470_InitialMigration.resx">
+      <DependentUpon>202109121251470_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109122019481_IntialMigration.resx">
+      <DependentUpon>202109122019481_IntialMigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109142232349_DBset Employee.resx">
       <DependentUpon>202109142232349_DBset Employee.cs</DependentUpon>
