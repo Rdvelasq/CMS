@@ -21,12 +21,13 @@ namespace CMS.Data
 
         [Required]
         public DateTime HireDate { get; set; }
+      
+        [Required]
+        public string Email { get; set; }
 
         [ForeignKey(nameof(Department))]
         public int DepartmentId { get; set; }
         public virtual Department Department { get; set; }
 
-        [Required]
-        public string Email { get; set; }        
     }
 }
