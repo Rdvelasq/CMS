@@ -88,13 +88,9 @@
     <Compile Include="Employee.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Manager.cs" />
-    <Compile Include="Migrations\202109150147079_inital .cs" />
-    <Compile Include="Migrations\202109150147079_inital .Designer.cs">
-      <DependentUpon>202109150147079_inital .cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202109150158298_foreign key in Employee.cs" />
-    <Compile Include="Migrations\202109150158298_foreign key in Employee.Designer.cs">
-      <DependentUpon>202109150158298_foreign key in Employee.cs</DependentUpon>
+    <Compile Include="Migrations\202109152142345_Last migration.cs" />
+    <Compile Include="Migrations\202109152142345_Last migration.Designer.cs">
+      <DependentUpon>202109152142345_Last migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Personnel.cs" />
@@ -105,11 +101,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202109150147079_inital .resx">
-      <DependentUpon>202109150147079_inital .cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109150158298_foreign key in Employee.resx">
-      <DependentUpon>202109150158298_foreign key in Employee.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202109152142345_Last migration.resx">
+      <DependentUpon>202109152142345_Last migration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
