@@ -62,5 +62,6 @@ namespace CMS.Data
         }
 
         public DbSet<Department> Departments { get; set; } 
+        public DbSet<Manager> Managers { get; set; }
     }
 }
