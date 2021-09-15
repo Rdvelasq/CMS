@@ -24,6 +24,10 @@ namespace CMS.Data
 
         [Required]
         public string Email { get; set; }
-                
+
+        [ForeignKey(nameof(Department))]
+        public int DepartmentID { get; set; }
+        public virtual Department Department { get; set; }
+
     }
 }

@@ -10,8 +10,10 @@ namespace CMS.Data
 {
     public class Employee : Personnel
     {
-        [Required]
+        [ForeignKey(nameof(Manager))]
         public int ManagerId { get; set; }
+        public virtual Manager Manager { get; set; }
+
         [Required]
         public double HourlyRate { get; set; }
     }
