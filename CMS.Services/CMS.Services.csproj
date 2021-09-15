@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Department_Services\DepartService.cs" />
+    <Compile Include="EmployeeService\EmployeeServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +74,17 @@
       <Project>{ceaec652-96c7-425d-9b2e-d57bac949b1a}</Project>
       <Name>CMS.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Employee\" />
+  </ItemGroup>
+    <Folder Include="Employee\" />
+  </ItemGroup>
+    <Folder Include="Employee\" />
+  </ItemGroup>
+    <Folder Include="Employee\" />
+  </ItemGroup>
+    <Folder Include="Employee\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
