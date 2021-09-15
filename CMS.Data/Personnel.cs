@@ -22,8 +22,10 @@ namespace CMS.Data
         [Required]
         public DateTime HireDate { get; set; }
 
+        [ForeignKey("Department")]
+        public int DepartmentId { get; set; }
+
         [Required]
-        public string Email { get; set; }
-                
+        public string Email { get; set; }        
     }
 }
