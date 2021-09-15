@@ -58,10 +58,6 @@
     <Compile Include="Department\DepartDetail.cs" />
     <Compile Include="Department\DepartEdit.cs" />
     <Compile Include="Department\DepartListItem.cs" />
-    <Compile Include="Employee\Create.cs" />
-    <Compile Include="Employee\Detail.cs" />
-    <Compile Include="Employee\Edit.cs" />
-    <Compile Include="Employee\ListItem.cs" />
     <Compile Include="Managers\Create.cs" />
     <Compile Include="Managers\Detail.cs" />
     <Compile Include="Managers\Edit.cs" />
