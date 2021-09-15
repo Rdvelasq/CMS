@@ -207,6 +207,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -328,7 +329,7 @@
       <Name>CMS.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\CMS.Services\CMS.Services.csproj">
-      <Project>{7dcd1798-5b9e-4deb-8be7-90496681b059}</Project>
+      <Project>{7DCD1798-5B9E-4DEB-8BE7-90496681B059}</Project>
       <Name>CMS.Services</Name>
     </ProjectReference>
   </ItemGroup>
