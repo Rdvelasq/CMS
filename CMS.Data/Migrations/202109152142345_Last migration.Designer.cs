@@ -7,13 +7,13 @@ namespace CMS.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class inital : IMigrationMetadata
+    public sealed partial class Lastmigration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(inital));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Lastmigration));
         
         string IMigrationMetadata.Id
         {
-            get { return "202109150147079_inital "; }
+            get { return "202109152142345_Last migration"; }
         }
         
         string IMigrationMetadata.Source
