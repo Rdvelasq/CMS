@@ -62,9 +62,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Employee\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CMS.Data\CMS.Data.csproj">
       <Project>{e7ba4f7f-5c64-4207-8c9b-02d3cc0ccbbb}</Project>
@@ -75,8 +73,6 @@
       <Name>CMS.Models</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Employee\" />	  
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
