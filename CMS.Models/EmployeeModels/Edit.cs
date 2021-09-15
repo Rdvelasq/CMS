@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMS.Models.Employee
+namespace CMS.Models.EmployeeModels
 {
     public class Edit
     {

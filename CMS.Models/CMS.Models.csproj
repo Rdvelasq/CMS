@@ -58,10 +58,10 @@
     <Compile Include="Department\DepartDetail.cs" />
     <Compile Include="Department\DepartEdit.cs" />
     <Compile Include="Department\DepartListItem.cs" />
-    <Compile Include="Employee\Create.cs" />
-    <Compile Include="Employee\Detail.cs" />
-    <Compile Include="Employee\Edit.cs" />
-    <Compile Include="Employee\ListItem.cs" />
+    <Compile Include="EmployeeModels\Create.cs" />
+    <Compile Include="EmployeeModels\Detail.cs" />
+    <Compile Include="EmployeeModels\Edit.cs" />
+    <Compile Include="EmployeeModels\ListItem.cs" />
     <Compile Include="Manager\Create.cs" />
     <Compile Include="Manager\Detail.cs" />
     <Compile Include="Manager\Edit.cs" />
