@@ -16,5 +16,8 @@ namespace CMS.Data
 
         [Required]
         public double HourlyRate { get; set; }
+
+
+
     }
 }

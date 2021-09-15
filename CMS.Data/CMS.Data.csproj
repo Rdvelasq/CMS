@@ -88,17 +88,13 @@
     <Compile Include="Employee.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Manager.cs" />
-    <Compile Include="Migrations\202109121251470_InitialMigration.cs" />
-    <Compile Include="Migrations\202109121251470_InitialMigration.Designer.cs">
-      <DependentUpon>202109121251470_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202109150147079_inital .cs" />
+    <Compile Include="Migrations\202109150147079_inital .Designer.cs">
+      <DependentUpon>202109150147079_inital .cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202109122019481_IntialMigration.cs" />
-    <Compile Include="Migrations\202109122019481_IntialMigration.Designer.cs">
-      <DependentUpon>202109122019481_IntialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202109142232349_DBset Employee.cs" />
-    <Compile Include="Migrations\202109142232349_DBset Employee.Designer.cs">
-      <DependentUpon>202109142232349_DBset Employee.cs</DependentUpon>
+    <Compile Include="Migrations\202109150158298_foreign key in Employee.cs" />
+    <Compile Include="Migrations\202109150158298_foreign key in Employee.Designer.cs">
+      <DependentUpon>202109150158298_foreign key in Employee.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Personnel.cs" />
@@ -109,14 +105,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202109121251470_InitialMigration.resx">
-      <DependentUpon>202109121251470_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202109150147079_inital .resx">
+      <DependentUpon>202109150147079_inital .cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109122019481_IntialMigration.resx">
-      <DependentUpon>202109122019481_IntialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109142232349_DBset Employee.resx">
-      <DependentUpon>202109142232349_DBset Employee.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202109150158298_foreign key in Employee.resx">
+      <DependentUpon>202109150158298_foreign key in Employee.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
