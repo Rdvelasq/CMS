@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace CMS.Models.Managers
 {
-    public class Detail
+    public class DetailManager
     {
+        public int ManagerId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime HireDate { get; set; }

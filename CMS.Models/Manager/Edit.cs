@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace CMS.Models.Managers
 {
-    public class ManagerEdit
+    public class EditManager
     {
         public int Id { get; set; }
         public string EmailAddress { get; set; }
         public double Salary { get; set; }
+        public int NumberOfEmployees { get; set; }
     }
 }
