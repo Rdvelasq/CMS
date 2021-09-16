@@ -65,7 +65,7 @@
     <Compile Include="Manager\Create.cs" />
     <Compile Include="Manager\Detail.cs" />
     <Compile Include="Manager\Edit.cs" />
-    <Compile Include="Manager\ListItem.cs" />
+    <Compile Include="Manager\ItemList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
