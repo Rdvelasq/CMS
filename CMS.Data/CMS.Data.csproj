@@ -88,11 +88,6 @@
     <Compile Include="Employee.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Manager.cs" />
-    <Compile Include="Migrations\202109152142345_Last migration.cs" />
-    <Compile Include="Migrations\202109152142345_Last migration.Designer.cs">
-      <DependentUpon>202109152142345_Last migration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Personnel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

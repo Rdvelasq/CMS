@@ -34,7 +34,7 @@ namespace CMS.WebAPI.Controllers
             {
                 return InternalServerError();
             }
-            return Ok();
+            return Ok($"{department.DepartmentName} {department.DepartmentName} has been created");
         }
 
         [HttpGet]
