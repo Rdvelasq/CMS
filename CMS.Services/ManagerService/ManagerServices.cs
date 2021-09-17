@@ -79,6 +79,7 @@ namespace CMS.Services.ManagerService
                     HireDate = manager.HireDate,
                     Email = manager.Email,
                     Salary = manager.Salary,
+                    Employees = ctx.Employees.Where(e => e.ManagerId == manager.Id).ToList()
                 };
             }
         }
