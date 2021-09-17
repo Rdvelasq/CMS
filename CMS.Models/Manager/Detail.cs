@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CMS.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,6 @@ namespace CMS.Models.Managers
         public DateTime HireDate { get; set; }
         public string Email { get; set; }
         public double Salary { get; set; }
+        public virtual List<Employee> Employees { get; set; } = new List<Employee>();
     }
 }
