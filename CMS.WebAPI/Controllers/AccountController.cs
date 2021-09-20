@@ -16,6 +16,7 @@ using Microsoft.Owin.Security.OAuth;
 using CMS.WebAPI.Models;
 using CMS.WebAPI.Providers;
 using CMS.WebAPI.Results;
+using CMS.Data;
 
 namespace CMS.WebAPI.Controllers
 {

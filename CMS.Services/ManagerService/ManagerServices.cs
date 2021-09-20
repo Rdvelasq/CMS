@@ -32,7 +32,10 @@ namespace CMS.Services.ManagerService
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Managers.Add(entity);
-                return await ctx.SaveChangesAsync() == 1;
+                return await ctx.SaveChangesAsync() == 1;  // Have to save changes to the database in order to add the manager to the database.
+                                                           // Asynchronously saves all changes made in this context to the database and returns a Task integer.
+                                                           // "SaveChangesAsync returns the number of objects that were updated/created/deleted from the Database.
+                                                           // So when we do == 1 we are checking to make sure that exactly one thing was updated/created/deleted."
             }
         }
 
