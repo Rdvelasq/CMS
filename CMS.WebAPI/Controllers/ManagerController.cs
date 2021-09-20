@@ -1,4 +1,5 @@
-﻿using CMS.Models.Managers;
+﻿using CMS.Data;
+using CMS.Models.Managers;
 using CMS.Services.ManagerService;
 using Microsoft.AspNet.Identity;
 using System;
@@ -13,7 +14,7 @@ namespace CMS.WebAPI.Controllers
 {
     [Authorize]
     public class ManagerController : ApiController
-    {
+    { 
         private ManagerServices CreateManagerService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
@@ -22,11 +23,12 @@ namespace CMS.WebAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IHttpActionResult> Create(CreateManager manager)
-        {
+        public async Task<IHttpActionResult> CreateManager([FromBody] CreateManager manager)
+        {             
+            // If the model in the createManager class 
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return BadRequest(ModelState);  // The model is not valid, go ahead and reject it.
             }
 
             var service = CreateManagerService();
@@ -34,7 +36,9 @@ namespace CMS.WebAPI.Controllers
             {
                 return InternalServerError();
             }
-            return Ok($"{manager.FirstName} {manager.LastName} has been added to the database.");
+
+            // If the model in the createManager class is valid
+            return Ok($"{manager.FirstName} {manager.LastName} has been added to the database."); 
         }
 
         [HttpGet]
