@@ -13,10 +13,8 @@ namespace CMS.Data
         [Required]
         public List<Employee> Employees { get; set; } = new List<Employee>();
 
-        [Required]
         public int NumberOfEmployees { get; set; }
 
-        [Required]
         public double Salary { get; set; }
     }
 }

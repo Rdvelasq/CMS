@@ -100,6 +100,18 @@
     <Compile Include="Migrations\202109200255208_Manager2.Designer.cs">
       <DependentUpon>202109200255208_Manager2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109212208495_Manager3.cs" />
+    <Compile Include="Migrations\202109212208495_Manager3.Designer.cs">
+      <DependentUpon>202109212208495_Manager3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109220010278_Manager4.cs" />
+    <Compile Include="Migrations\202109220010278_Manager4.Designer.cs">
+      <DependentUpon>202109220010278_Manager4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109220026225_Manager5.cs" />
+    <Compile Include="Migrations\202109220026225_Manager5.Designer.cs">
+      <DependentUpon>202109220026225_Manager5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Personnel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,6 +132,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109200255208_Manager2.resx">
       <DependentUpon>202109200255208_Manager2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109212208495_Manager3.resx">
+      <DependentUpon>202109212208495_Manager3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109220010278_Manager4.resx">
+      <DependentUpon>202109220010278_Manager4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109220026225_Manager5.resx">
+      <DependentUpon>202109220026225_Manager5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

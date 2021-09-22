@@ -23,7 +23,7 @@ namespace CMS.WebAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IHttpActionResult> CreateManager([FromBody] CreateManager manager)
+        public async Task<IHttpActionResult> CreateManager([FromBody]CreateManager manager)
         {             
             // If the model in the createManager class 
             if (!ModelState.IsValid)
