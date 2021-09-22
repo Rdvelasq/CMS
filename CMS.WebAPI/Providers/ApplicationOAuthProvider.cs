@@ -10,6 +10,7 @@ using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 using CMS.WebAPI.Models;
+using CMS.Data;
 
 namespace CMS.WebAPI.Providers
 {

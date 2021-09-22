@@ -15,6 +15,7 @@ namespace CMS.Data
         [Required]
         public string DepartmentName { get; set; }
 
+        public bool TestField { get; set; }
 
         //This is the list of personnel
         public List<Personnel> DepartmentListPersonnel { get; set; }
