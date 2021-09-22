@@ -88,9 +88,9 @@
     <Compile Include="Employee.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Manager.cs" />
-    <Compile Include="Migrations\202109162340082_Manager.cs" />
-    <Compile Include="Migrations\202109162340082_Manager.Designer.cs">
-      <DependentUpon>202109162340082_Manager.cs</DependentUpon>
+    <Compile Include="Migrations\202109191250266_InitialMigration.cs" />
+    <Compile Include="Migrations\202109191250266_InitialMigration.Designer.cs">
+      <DependentUpon>202109191250266_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202109200253092_Manager1.cs" />
     <Compile Include="Migrations\202109200253092_Manager1.Designer.cs">
@@ -121,11 +121,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202109152142345_Last migration.resx">
-      <DependentUpon>202109152142345_Last migration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109162340082_Manager.resx">
-      <DependentUpon>202109162340082_Manager.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202109191250266_InitialMigration.resx">
+      <DependentUpon>202109191250266_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109200253092_Manager1.resx">
       <DependentUpon>202109200253092_Manager1.cs</DependentUpon>

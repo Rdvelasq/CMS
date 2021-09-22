@@ -16,8 +16,7 @@ namespace CMS.Models.Department
         [Display(Name = "Department Name")]
         public string DepartmentName { get; set; }
 
-        [Display(Name = "List of Personnel")]
-        public List<Personnel> DepartmentListPersonnel { get; set; }
+        
 
 
     }
