@@ -3,7 +3,7 @@ namespace CMS.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Manager : DbMigration
+    public partial class InitialMigration : DbMigration
     {
         public override void Up()
         {
@@ -13,6 +13,7 @@ namespace CMS.Data.Migrations
                     {
                         DepartmentId = c.Int(nullable: false, identity: true),
                         DepartmentName = c.String(nullable: false),
+                        TestField = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.DepartmentId);
             
