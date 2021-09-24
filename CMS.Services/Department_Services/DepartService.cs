@@ -23,7 +23,9 @@ namespace CMS.Services.Department_Services
             var entity =
                 new Department() // This creates an instance of Department.
                 {
-                    DepartmentName = model.DepartmentName
+                    DepartmentName = model.DepartmentName,
+                    DepartmentLocation = model.DepartmentLocation
+
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -44,6 +46,7 @@ namespace CMS.Services.Department_Services
                     {
                         DepartmentId = c.DepartmentId,
                         DepartmentName = c.DepartmentName,
+                        DepartmentLocation = c.DepartmentLocation,
                         
                     }).ToListAsync();
                 return query;
@@ -68,7 +71,8 @@ namespace CMS.Services.Department_Services
                 return new DepartDetail
                 {
                     DepartmentId = department.DepartmentId,
-                    DepartmentName = department.DepartmentName,                    
+                    DepartmentName = department.DepartmentName,
+                    DepartmentLocation = department.DepartmentLocation,
                 };
             }
         }
@@ -84,6 +88,7 @@ namespace CMS.Services.Department_Services
                     .Departments
                     .SingleOrDefaultAsync(d => d.DepartmentId == NewDepartment.DepartmentId);
                 department.DepartmentName = NewDepartment.DepartmentName;
+                department.DepartmentLocation = NewDepartment.DepartmentLocation;
                 return await ctx.SaveChangesAsync() == 1;
             }
 
@@ -119,11 +124,8 @@ namespace CMS.Services.Department_Services
                     .Select(d => new ListItem
                     {
                         FirstName = d.FirstName,
-                        LastName = d.LastName,
-                        HireDate = d.HireDate,
-                        Email = d.Email,
-                        ManagerId = d.ManagerId,
-                        HourlyRate = d.HourlyRate
+                        LastName = d.LastName
+                        
                     }).ToListAsync();
 
                 return query;

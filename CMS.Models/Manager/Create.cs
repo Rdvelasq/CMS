@@ -15,8 +15,6 @@ namespace CMS.Models.Managers
         [Required]
         public string LastName { get; set; }
         
-        [Required]
-        public DateTime HireDate { get; set; }
 
         [Required]
         public string Email { get; set; }

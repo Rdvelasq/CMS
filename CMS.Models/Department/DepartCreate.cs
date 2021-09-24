@@ -16,6 +16,8 @@ namespace CMS.Models.Department
         public string DepartmentName { get; set; }
         public override string ToString() => DepartmentName;
 
+        [Required]
+        public string DepartmentLocation { get; set; }
         public List<Personnel> DepartmentListPersonnel { get; set; }
 
     }

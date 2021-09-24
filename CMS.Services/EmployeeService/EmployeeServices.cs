@@ -23,9 +23,10 @@ namespace CMS.Services.EmployeeService
             {
                 FirstName = employee.FirstName,
                 LastName = employee.LastName,
-                HireDate = employee.HireDate,
+                HireDate = DateTime.Now,
                 Email = employee.Email,
                 ManagerId = employee.ManagerId,
+                DepartmentId = employee.DepartmentId,
                 HourlyRate = employee.HourlyRate
             };
 
@@ -51,7 +52,7 @@ namespace CMS.Services.EmployeeService
             
         }
 
-        public async Task<IEnumerable<ListItem>> Get()
+        public async Task<IEnumerable<ListItem>> GetEmployeesByDepartmentName()
         {
             using (var ctx = new ApplicationDbContext()) {
                 var query =
@@ -89,6 +90,9 @@ namespace CMS.Services.EmployeeService
             }
             
         }
+
+
         
+
     }
 }

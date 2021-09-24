@@ -3,7 +3,7 @@ namespace CMS.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialMigration : DbMigration
+    public partial class ThiredMigration : DbMigration
     {
         public override void Up()
         {

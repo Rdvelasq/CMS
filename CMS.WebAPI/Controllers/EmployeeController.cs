@@ -51,10 +51,13 @@ namespace CMS.WebAPI.Controllers
         public async Task<IHttpActionResult> Get()
         {
             var service = CreateEmployeeService();
-            var employee = service.Get();
+            var employee = service.GetEmployeesByDepartmentName();
             return Ok(await employee);
         }
+
         
+       
+
         [HttpPut]
         public async Task<IHttpActionResult> Update(Edit employee, int id)
         {

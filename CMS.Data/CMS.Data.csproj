@@ -88,29 +88,13 @@
     <Compile Include="Employee.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Manager.cs" />
-    <Compile Include="Migrations\202109191250266_InitialMigration.cs" />
-    <Compile Include="Migrations\202109191250266_InitialMigration.Designer.cs">
-      <DependentUpon>202109191250266_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202109222224525_ThiredMigration.cs" />
+    <Compile Include="Migrations\202109222224525_ThiredMigration.Designer.cs">
+      <DependentUpon>202109222224525_ThiredMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202109200253092_Manager1.cs" />
-    <Compile Include="Migrations\202109200253092_Manager1.Designer.cs">
-      <DependentUpon>202109200253092_Manager1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202109200255208_Manager2.cs" />
-    <Compile Include="Migrations\202109200255208_Manager2.Designer.cs">
-      <DependentUpon>202109200255208_Manager2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202109212208495_Manager3.cs" />
-    <Compile Include="Migrations\202109212208495_Manager3.Designer.cs">
-      <DependentUpon>202109212208495_Manager3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202109220010278_Manager4.cs" />
-    <Compile Include="Migrations\202109220010278_Manager4.Designer.cs">
-      <DependentUpon>202109220010278_Manager4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202109220026225_Manager5.cs" />
-    <Compile Include="Migrations\202109220026225_Manager5.Designer.cs">
-      <DependentUpon>202109220026225_Manager5.cs</DependentUpon>
+    <Compile Include="Migrations\202109230116037_4thMigration.cs" />
+    <Compile Include="Migrations\202109230116037_4thMigration.Designer.cs">
+      <DependentUpon>202109230116037_4thMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Personnel.cs" />
@@ -121,23 +105,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202109191250266_InitialMigration.resx">
-      <DependentUpon>202109191250266_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202109222224525_ThiredMigration.resx">
+      <DependentUpon>202109222224525_ThiredMigration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109200253092_Manager1.resx">
-      <DependentUpon>202109200253092_Manager1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109200255208_Manager2.resx">
-      <DependentUpon>202109200255208_Manager2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109212208495_Manager3.resx">
-      <DependentUpon>202109212208495_Manager3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109220010278_Manager4.resx">
-      <DependentUpon>202109220010278_Manager4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109220026225_Manager5.resx">
-      <DependentUpon>202109220026225_Manager5.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202109230116037_4thMigration.resx">
+      <DependentUpon>202109230116037_4thMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

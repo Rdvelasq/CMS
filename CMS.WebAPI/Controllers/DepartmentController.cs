@@ -1,5 +1,6 @@
 ﻿using CMS.Models.Department;
 using CMS.Services.Department_Services;
+using CMS.Services.EmployeeService;
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,15 @@ namespace CMS.WebAPI.Controllers
             var userId = Guid.Parse(User.Identity.GetUserId());
             var departmentService = new DepartService(userId);
             return departmentService;
+        }
+
+
+        //Not Sure if i should include this here
+        private EmployeeServices CreateEmployeeService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var employeeServices = new EmployeeServices(userId);
+            return employeeServices;
         }
 
         [HttpPost]
@@ -57,7 +67,14 @@ namespace CMS.WebAPI.Controllers
         }
 
 
+        //[HttpGet]
+        //public async Task<IHttpActionResult> GetEmployeesByDepartmentName(string departmentName)
+        //{
+            
+        //}
+
         // DELETE Department By Id (Required)
+
         [HttpDelete]
         public async Task<IHttpActionResult> Delete(int id)
         {
