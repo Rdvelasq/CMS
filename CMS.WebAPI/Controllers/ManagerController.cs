@@ -82,6 +82,7 @@ namespace CMS.WebAPI.Controllers
         }
 
         [HttpGet]
+        [Route("Manager/GetEmployeesByManager")]
         //Get List of Employees By Manager
         public async Task<IHttpActionResult> GetListOfEmployeesByManager()
         {
