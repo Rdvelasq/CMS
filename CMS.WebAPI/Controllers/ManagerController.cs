@@ -23,7 +23,7 @@ namespace CMS.WebAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IHttpActionResult> CreateManager([FromBody]CreateManager manager)
+        public async Task<IHttpActionResult> CreateManager(CreateManager manager)
         {             
             // If the model in the createManager class 
             if (!ModelState.IsValid)
@@ -66,20 +66,23 @@ namespace CMS.WebAPI.Controllers
             {
                 return InternalServerError();
             }
-            return Ok($"Manager{id} has been updated.");
+            return Ok($"Manager with Id {id} has been updated.");
         }
 
         [HttpDelete]
         // Delete Manager
         public async Task<IHttpActionResult> Delete(int id)
         {
-            var service = CreateManagerService();
-            var manager = service.GetManagerById(id);
-            return Ok(await manager);
+            var managerService = CreateManagerService();
+            if (!await managerService.Delete(id))
+            {
+                return Ok("Manager was not found.");
+            }
+            return Ok($"Manager with ID# {id} was deleted.");
         }
 
         [HttpGet]
-        // Get List of Employees By Manager
+        //Get List of Employees By Manager
         public async Task<IHttpActionResult> GetListOfEmployeesByManager()
         {
             var service = CreateManagerService();

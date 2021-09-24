@@ -19,14 +19,15 @@ namespace CMS.Services.EmployeeService
         
         public async Task<bool> Create(Create employee)
         {
-            var entity = new Employee
+            var entity = new Employee()
             {
                 FirstName = employee.FirstName,
                 LastName = employee.LastName,
-                HireDate = employee.HireDate,
+                HireDate = DateTime.Now,
                 Email = employee.Email,
                 ManagerId = employee.ManagerId,
-                HourlyRate = employee.HourlyRate
+                HourlyRate = employee.HourlyRate, 
+                DepartmentId = employee.DepartmentId,
             };
 
             using(var ctx = new ApplicationDbContext())
@@ -34,7 +35,6 @@ namespace CMS.Services.EmployeeService
                 ctx.Employees.Add(entity);
                 return await ctx.SaveChangesAsync() == 1;
             }
-        
         }
 
         public async Task<bool> Delete(int id)

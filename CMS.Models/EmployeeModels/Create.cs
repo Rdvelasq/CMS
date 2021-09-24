@@ -15,5 +15,6 @@ namespace CMS.Models.EmployeeModels
         public string Email { get; set; }
         public int ManagerId { get; set; }
         public double HourlyRate { get; set; }
+        public int DepartmentId { get; set; }
     }
 }

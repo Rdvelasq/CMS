@@ -16,8 +16,7 @@ namespace CMS.Models.Department
         [Display(Name = "Department Name")]
         public string DepartmentName { get; set; }
 
-        
-
-
+        [Display(Name = "Department Location")]
+        public string DepartmentLocation { get; set; }
     }
 }
