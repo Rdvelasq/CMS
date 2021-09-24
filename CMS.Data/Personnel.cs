@@ -28,6 +28,5 @@ namespace CMS.Data
         [ForeignKey(nameof(Department))]
         public int DepartmentId { get; set; }
         public virtual Department Department { get; set; }
-
     }
 }

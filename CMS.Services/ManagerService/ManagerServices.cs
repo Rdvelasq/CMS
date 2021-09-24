@@ -24,9 +24,11 @@ namespace CMS.Services.ManagerService
             {
                 FirstName = manager.FirstName,
                 LastName = manager.LastName,
-                HireDate = manager.HireDate,
+                HireDate = DateTime.Now,
                 Email = manager.Email,
                 Salary = manager.Salary,
+                NumberOfEmployees = manager.NumberOfEmployees,
+                DepartmentId = manager.DepartmentId,
             };
 
             using (var ctx = new ApplicationDbContext())
@@ -54,6 +56,8 @@ namespace CMS.Services.ManagerService
                         HireDate = d.HireDate,
                         Email = d.Email,
                         Salary = d.Salary,
+                        DepartmentId = d.DepartmentId,
+                        ManagerId = d.Id,
                     }).ToListAsync();
                 return query;
             }
@@ -82,7 +86,7 @@ namespace CMS.Services.ManagerService
                     HireDate = manager.HireDate,
                     Email = manager.Email,
                     Salary = manager.Salary,
-                    Employees = ctx.Employees.Where(e => e.ManagerId == manager.Id).ToList()
+                   // Employees = ctx.Employees.Where(e => e.ManagerId == manager.Id).ToList()
                 };
             }
         }
@@ -96,8 +100,11 @@ namespace CMS.Services.ManagerService
                     ctx
                     .Managers
                     .SingleOrDefaultAsync(d => d.Id == id);
+                manager.FirstName = NewManager.FirstName;
+                manager.LastName = NewManager.LastName;
                 manager.Email = NewManager.EmailAddress;
                 manager.Salary = NewManager.Salary;
+                manager.Id = NewManager.Id;
                 manager.NumberOfEmployees = NewManager.NumberOfEmployees;
                 return await ctx.SaveChangesAsync() == 1;
             }
@@ -107,12 +114,15 @@ namespace CMS.Services.ManagerService
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity =
-                    ctx
-                    .Managers
-                    .Select(d => d.Id == id);
-                ctx.Managers.Remove((Manager)entity);
-                return await ctx.SaveChangesAsync() == 1;
+                var oldManagerData = await ctx.Managers.FindAsync(id);
+                if (oldManagerData is null)
+                {
+                    return false;
+                }
+
+                var result = ctx.Managers.Remove(oldManagerData);
+                await ctx.SaveChangesAsync();
+                return true;
             }
         }
 

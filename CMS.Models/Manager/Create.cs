@@ -15,13 +15,15 @@ namespace CMS.Models.Managers
         [Required]
         public string LastName { get; set; }
         
-        [Required]
         public DateTime HireDate { get; set; }
 
         [Required]
         public string Email { get; set; }
         public double Salary { get; set; }
+
         public int NumberOfEmployees { get; set; }
+
+        [Required]
         public int DepartmentId { get; set; }
     }
 }

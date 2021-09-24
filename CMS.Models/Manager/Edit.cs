@@ -11,6 +11,9 @@ namespace CMS.Models.Managers
     {
         [Required]
         public int Id { get; set; }
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string EmailAddress { get; set; }
         public double Salary { get; set; }
         public int NumberOfEmployees { get; set; }
